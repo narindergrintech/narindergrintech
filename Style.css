@@ -1,1 +1,8 @@
-
+/*Using this code and tag P tag or H2-h6 tag will come only 2 line not more then 2*/
+.product-wrapper-item h6.sr-titleS {
+  height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
