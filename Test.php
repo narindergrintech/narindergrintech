@@ -1,4 +1,6 @@
-Cart Pop Up Show while click on Single product page Add to cart Button
+<?php 
+
+/* Cart Pop Up Show while click on Single product page Add to cart Button */
 
 function custom_after_add_to_cart( $cart_item_key, $product_id, $quantity, $variation_id, $variation, $cart_item_data ) {
 ?>
