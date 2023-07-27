@@ -1,0 +1,8 @@
+Get cat custom Banner Image on archive page
+<?php 
+	//$img = get_term_meta($selected_category->term_id, 'thumbnail_id', true);  
+	$img = get_term_meta($selected_category->term_id, 'cat_banner', true);
+	$image_url = wp_get_attachment_image_src($img , 'full');
+	//echo '<pre>';print_r($selected_category);echo '</pre>'; 	
+	?>
+	<img src="<?php echo $image_url[0]; ?>">
