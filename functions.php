@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
 });
 
 <?php
+/*this code will to functions.php */
 function enqueue_jquery() {
     wp_enqueue_script('jquery');
 }
@@ -17,6 +18,7 @@ function enqueue_custom_checkout_js() {
     wp_enqueue_script('custom-checkout', get_template_directory_uri() . '/custom-checkout.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_checkout_js');
+/* Change the check out field priority End */
 
 
 
