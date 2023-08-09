@@ -1,4 +1,24 @@
-<?php 
+/* Change the check out field priority */
+/* Put this code in js file*/
+jQuery(document).ready(function($) {
+    // Move City field after Street field
+    $('#billing_address_1_field').insertAfter($('#billing_city_field'));
+
+    // You can add further customization if needed
+});
+
+<?php
+function enqueue_jquery() {
+    wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'enqueue_jquery');
+
+function enqueue_custom_checkout_js() {
+    wp_enqueue_script('custom-checkout', get_template_directory_uri() . '/custom-checkout.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_checkout_js');
+
+
 
 /* Cart Pop Up Show while click on Single product page Add to cart Button */
 
