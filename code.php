@@ -51,3 +51,55 @@ if ( ! empty( $parent_categories ) && ! is_wp_error( $parent_categories ) ) {
 	</div>
 </section>
 /* End Get category*/
+
+
+
+/* Get Sub category by parent category */
+$selected_category = get_queried_object();
+$subcategories_of_selected_categories = get_terms(array('taxonomy' => 'product_cat', 'hide_empty' => false, 'parent' => $selected_category->term_id, 'orderby' => 'count', 'order' => 'desc')); 
+$cat_id = $selected_category->term_id;
+
+
+
+<?php 	if ($subcategories_of_selected_categories) { ?>
+<div class="main-tabs">
+	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+	<!-- <li class="nav-item" role="presentation">
+					<button class="nav-link active" id="pills-0-tab" data-bs-toggle="pill" data-bs-target-ids="0" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true">את כל</button>
+				</li> -->
+
+	<?php 
+		//echo "<pre>"; print_r($subcategories); echo "</pre>"; die("Herre");
+
+		//Loop through the subcategories and display them
+	
+			$count= 0;
+				foreach ( $subcategories_of_selected_categories as $subcategory ) {
+					$subcategory_url  = get_term_link( $subcategory );
+	
+					//echo '<a href="' . get_term_link( $subcategory ) . '">' . $subcategory->name . '</a>';
+					if($count == 0){
+					echo '<li class="nav-item test" role="presentation">
+					<a class="nav-link tesat" href="'.$subcategory_url.'">' . $subcategory->name . '</a>
+				</li>';
+					}else{
+					echo '<li class="nav-item" role="presentation">
+					<a class="nav-link" href="'.$subcategory_url.'">' . $subcategory->name . '</a>
+				</li>';
+					}
+				$count++;
+				}	?>
+
+		<!-- <li class="nav-item" role="presentation">
+		<button class="nav-link" id="pills-first-tab" data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab" aria-controls="pills-first" aria-selected="true">קוטלי פטריות</button>
+		</li>
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">קוטלי עשבים</button>
+		</li>
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">קוטלי חרקים</button>
+		</li> -->
+	</ul>
+</div>
+<?php } ?>
