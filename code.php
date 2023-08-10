@@ -19,7 +19,7 @@ $args = array(
     'order'      => $order,
     'hide_empty' => $hide_empty,
     'include'    => $ids,
-    'status'     => 'publis'
+    'status'     => 'publish'
 );
 $parent_categories = get_terms($args);
 //echo "<pre>"; print_r($parent_categories); echo "</pre>";
@@ -50,16 +50,25 @@ if ( ! empty( $parent_categories ) && ! is_wp_error( $parent_categories ) ) {
 		</div>
 	</div>
 </section>
+
 /* End Get category*/
 
 
 
+
+
+
+
+
+
+
+
 /* Get Sub category by parent category */
+
+
 $selected_category = get_queried_object();
 $subcategories_of_selected_categories = get_terms(array('taxonomy' => 'product_cat', 'hide_empty' => false, 'parent' => $selected_category->term_id, 'orderby' => 'count', 'order' => 'desc')); 
 $cat_id = $selected_category->term_id;
-
-
 
 <?php 	if ($subcategories_of_selected_categories) { ?>
 <div class="main-tabs">
