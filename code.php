@@ -112,3 +112,34 @@ $cat_id = $selected_category->term_id;
 	</ul>
 </div>
 <?php } ?>
+
+
+
+// Porfolio Archive page - Add Description
+add_action( 'ukiyo_qodef_after_container_open', 'ukiyo_qodef_add_dec_portfolio_archive_dec' );
+function ukiyo_qodef_add_dec_portfolio_archive_dec() {
+
+  if ( is_tax('portfolio-category') ) {
+    $current_category = get_queried_object();
+    $description = term_description( $current_category->term_id, 'portfolio-category' );
+
+      $id= $current_category->term_id; 
+      $add_pic = get_field( "add_picture", 'term_'.$id );
+
+      if ($add_pic){ 
+        ?>
+        
+        <img src="<?php echo $add_pic; ?>" width="100%" height="auto">
+      <?  }
+
+    echo '<div class="qodef-container-inner extra portfolio-subtitle-wrapper">';
+    echo '<div class="qodef-grid-row flex">';
+    echo '<div class="qodef-grid-col-12">';
+    echo '<div class="portfolio-subtitle">';
+    echo $description; // Output the category description
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+  }
+}
