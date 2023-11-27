@@ -1,3 +1,5 @@
 https://github.com/anisur2805/woocommerce-mini-cart-ajax-plus-minus
 
 https://www.narindersingh.in/how-to-add-woocommerce-mini-cart/
+
+https://blog.templatetoaster.com/wordpress-settings-api-creating-theme-options/
