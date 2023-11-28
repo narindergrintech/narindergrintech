@@ -1,0 +1,23 @@
+<!-- wp:search {"label":"","showLabel":false,"placeholder":"Search","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+
+
+<!-- wp:ultimate-post/heading {"blockId":"3d1489","headingText":"Our Latest Blogs"} /-->
+
+
+<!-- wp:latest-posts {"displayAuthor":true,"displayPostDate":true,"displayFeaturedImage":true,"featuredImageAlign":"left","featuredImageSizeWidth":75,"featuredImageSizeHeight":75,"addLinkToFeaturedImage":true} /-->
+
+<!-- wp:heading {"className":"eplus-wrapper","UAGDay":[]} -->
+<h2 class="wp-block-heading eplus-wrapper">Get Social</h2>
+<!-- /wp:heading -->
+
+<!-- wp:social-links {"openInNewTab":true,"className":"eplus-wrapper"} -->
+<ul class="wp-block-social-links eplus-wrapper"><!-- wp:social-link {"url":"https://www.facebook.com/godsyou/","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.instagram.com/godsmessagingyou/","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"https://www.youtube.com/channel/UCtQ5pbo2n0gFe5veYDCiGRA/featured","service":"youtube"} /-->
+
+<!-- wp:social-link {"url":"https://www.pinterest.com/godsmailingyou","service":"pinterest"} /--></ul>
+<!-- /wp:social-links -->
+
+<!-- wp:ub/content-filter-block {"blockID":"54e9813f-0871-4bb0-9423-c2eca9c971fa","activeButtonTextColor":"#ffffff","matchingOption":"matchAny"} /-->
