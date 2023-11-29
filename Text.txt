@@ -7,4 +7,6 @@ https://www.narindersingh.in/how-to-add-woocommerce-mini-cart/
 
 https://blog.templatetoaster.com/wordpress-settings-api-creating-theme-options/
 
+remote content allowed in mailbox
+
 https://support.mozilla.org/en-US/kb/remote-content-in-messages#:~:text=Display%20remote%20content%20by%20default,-If%20you%20are&text=and%20choose%20Settings.,specific%20sites%20from%20the%20rule.
