@@ -1,4 +1,5 @@
 /*Using this code and tag P tag or H2-h6 tag will come only 2 line not more then 2*/
+/*Start*/
 .product-wrapper-item h6.sr-titleS {
   height: 60px;
   display: -webkit-box;
@@ -6,3 +7,24 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/*End*/
+
+/*On Mouse Hover Move Section Up */
+/*Start*/
+.sfw-overview__keywords-item:hover {
+    transform: translateY(-16px);
+    transition: 0.3s linear all;
+}
+.sfw-overview__keywords-item {
+    background: #ffffff;
+    border-bottom: 3px solid #163062;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    flex: 0 0 calc(33.85% - 40px);
+    margin-bottom: 40px;
+    margin-right: 15px;
+    max-width: calc(33.85% - 40px);
+    padding: 30px 30px;
+    transition: 0.3s linear all;
+}
+/*End*/
