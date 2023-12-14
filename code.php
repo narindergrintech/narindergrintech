@@ -1,9 +1,9 @@
 <div class="item_show_lowest_shipping">
 <?php echo $post->ID; ?>
-איסוף עצמי: <?php echo get_post_meta(get_the_ID(), 'sectionOneFormTitle', true)?>
+Plocka upp: <?php echo get_post_meta(get_the_ID(), 'sectionOneFormTitle', true)?>
 </div>
 <div class="item_delivery_time">
-זמן אספקה: <?php echo get_post_meta(get_the_ID(), 'sectionOneTitle', true)?>
+Leveranstid: <?php echo get_post_meta(get_the_ID(), 'sectionOneTitle', true)?>
 </div>
 
 /* Get category*/
@@ -33,7 +33,6 @@ if ( ! empty( $parent_categories ) && ! is_wp_error( $parent_categories ) ) {
         $cat_icon = wp_get_attachment_url( $custom_banner, 'full' );
         $link = get_term_link( $parent_category_id, 'product_cat' );
         ?>
-
         <div class="col gx-4 gx-md-3">
             <a class="cbox1 c-bg1" href="<?php echo $link; ?>">
             <img src="<?php echo $cat_icon; ?>" class="img-fluid"/>
