@@ -1,5 +1,5 @@
 <?php
-    /* 
+    /*
     *   Template Name: Wishlist Page 
     */
     $clickedIds = array();
