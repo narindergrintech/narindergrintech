@@ -1,3 +1,7 @@
+Create Child Theme 
+https://wpmarmite.com/en/child-theme-generator/
+
+
 Very Important
 https://adambrown.info/p/wp_hooks/hook
 
