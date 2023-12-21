@@ -1,3 +1,12 @@
+/* If cart is empty Mini cart template appears as empty after updating to WooCommerce v7.8.0 */
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_wc_cart_fragments' );
+function custom_enqueue_wc_cart_fragments() {
+    wp_enqueue_script( 'wc-cart-fragments' );
+}
+
+
+
+
 <div class="item_show_lowest_shipping">
 <?php echo $post->ID; ?>
 Plocka upp: <?php echo get_post_meta(get_the_ID(), 'sectionOneFormTitle', true)?>
