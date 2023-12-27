@@ -59,3 +59,10 @@
     background-color: #0f8a5f!important;
     border: none!important
 }
+/*FLEX PROPERTY*/
+.wp-block-search__inside-wrapper {
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
